@@ -13,6 +13,7 @@ Lab7-Elias-Ghanem/
 ├── test_user_Elias_Ghanem.py   Graded tests for the user API
 ├── requirements.txt
 ├── postman/                    Lab 5 Postman collection and environment
+├── screenshots/                pytest results
 └── tutorial/                   Lab 7 walkthrough exercises
     ├── capitalize.py
     ├── test_capitalize.py
@@ -49,6 +50,16 @@ pytest
 Each test gets its own temporary SQLite database (pytest `tmp_path` and
 `monkeypatch` on `DB_PATH`), so the tests never touch `database.db` and can run
 in any order.
+
+## Test results
+
+All tests:
+
+![pytest passing](screenshots/pytest.png)
+
+Graded user API tests:
+
+![pytest verbose run of the user API tests](screenshots/pytest-verbose.png)
 
 ## What is tested
 
